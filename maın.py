@@ -1,18 +1,22 @@
 from functions import *
 
 def menu():
+
     print("\n==== Programming Quotes ====\n")
     print("random : Random quote")
     print("display : Display quotes")
     print("add : Add a new quote")
     print("exit : Exit the program")
+ 
+
 
 def main():
     while True:
         quotes = load_quotes("quotes.txt")
         menu()
-
         choice = input(">> ")
+
+        choice = input("Choose your an action (1-4): ")
         
         if choice == "random":
             print_quote(random_quote(quotes))
@@ -24,6 +28,8 @@ def main():
         elif choice == "exit":
             print("Good bye...")
             break
+        
+           
         else:
             print("Invalid input")
 
