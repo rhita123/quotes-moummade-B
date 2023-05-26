@@ -1,7 +1,7 @@
 from functions import *
 
 def menu():
-    print("\n==== Programming Quotes ====")
+    print("\n==== Programming Quotes ====\n")
     print("random : Random quote")
     print("display : Display quotes")
     print("add : Add a new quote")
