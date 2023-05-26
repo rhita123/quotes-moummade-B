@@ -22,8 +22,8 @@ def main():
             add_quote(quotes,'quotes.txt')
             
         elif choice == "4":
-            print("Good bye...")
-            break
+            count = int(input("Enter the number of quotes to display: "))
+            display_quotes(quotes, count)
         else:
             print("Invalid input")
 
